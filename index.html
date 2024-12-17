@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#projeto">Projeto JS</a></li>
+            <li><a href="#motivacao">Motivação</a></li>
+            <li><a href="#contador">Contador</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção de Início -->
+    <section id="inicio">
+        <h1 class="typing-effect">Olá, eu sou o Ricardo!</h1>
+        <p>Bem-vindo ao meu primeiro projeto criativo. 🚀</p>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou estudante de Análise e Desenvolvimento de Sistemas e estou começando a criar projetos usando <strong>HTML, CSS e JavaScript</strong>.</p>
+    </section>
+
+    <!-- Seção Projeto Interativo -->
+    <section id="projeto">
+        <h2>Jogo Simples em JavaScript</h2>
+        <p>Adivinhe o número entre 1 e 10!</p>
+        <input type="number" id="guess" placeholder="Digite seu palpite">
+        <button onclick="checkGuess()">Enviar</button>
+        <p id="feedback"></p>
+    </section>
+
+    <!-- Seção Motivacional -->
+    <section id="motivacao">
+        <h2>Frases Motivacionais</h2>
+        <p>Clique no botão para ler uma frase motivacional aleatória!</p>
+        <button onclick="generateMotivation()">Gerar Frase</button>
+        <p id="motivation-output"></p>
+    </section>
+
+    <!-- Seção Contador de Cliques -->
+    <section id="contador">
+        <h2>Contador de Cliques</h2>
+        <p>Veja quantas vezes você clicou no botão!</p>
+        <button onclick="countClicks()">Clique Aqui</button>
+        <p>Total de cliques: <span id="click-count">0</span></p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Ricardo - Meu Primeiro Projeto</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Seção Quiz -->
+<section id="quiz">
+    <h2>Desafio: Quiz de Programação</h2>
+    <p>Responda as perguntas abaixo e teste seus conhecimentos básicos!</p>
+    <div id="quiz-container">
+        <!-- Pergunta 1 -->
+        <div class="question">
+            <p>1. Qual linguagem é usada para estilizar páginas web?</p>
+            <input type="radio" name="q1" value="HTML"> HTML<br>
+            <input type="radio" name="q1" value="CSS"> CSS<br>
+            <input type="radio" name="q1" value="Python"> Python<br>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question">
+            <p>2. Qual comando exibe algo no console em JavaScript?</p>
+            <input type="radio" name="q2" value="print()"> print()<br>
+            <input type="radio" name="q2" value="console.log()"> console.log()<br>
+            <input type="radio" name="q2" value="echo"> echo<br>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question">
+            <p>3. O que significa HTML?</p>
+            <input type="radio" name="q3" value="Hyper Trainer Markup Language"> Hyper Trainer Markup Language<br>
+            <input type="radio" name="q3" value="Hyper Text Markup Language"> Hyper Text Markup Language<br>
+            <input type="radio" name="q3" value="Hyperlink Text Management Language"> Hyperlink Text Management Language<br>
+        </div>
+    </div>
+    <button onclick="submitQuiz()">Enviar Respostas</button>
+    <p id="quiz-feedback"></p>
+</section>
+<!-- Seção Agradecimento e Piadas -->
+<section id="agradecimento">
+    <h2>Especial para o Professor Maicon</h2>
+    <p>Professor Maicon, obrigado por suas aulas inspiradoras e por nos fazer rir com suas piadas!</p>
+    <p>Clique no botão abaixo para ler uma "piada do dia" em sua homenagem!</p>
+    <button onclick="generateJoke()">Gerar Piada</button>
+    <p id="joke-output"></p>
+</section>
+<section id="motivacao">
+    <h2>Minha Motivação</h2>
+    <p>
+        Sempre tive curiosidade sobre tecnologia e desenvolvimento de sistemas, mas foi durante as aulas de 
+        <strong>Iniciação Científica</strong> do Professor Maicon que encontrei 
+        uma paixão por aprender mais a fundo e explorar novas áreas do conhecimento.
+    </p>
+    <p>
+        Essas aulas me ensinaram a importância da pesquisa, do aprofundamento e da dedicação em qualquer projeto, 
+        e me motivaram a buscar desafios maiores, como este site que estou desenvolvendo.(foi muito complicado!)
+    </p>
+    <p>
+        Aos estudantes: sigam sempre seus sonhos! Não importa o quão desafiador o caminho possa parecer, 
+        com persistência e o apoio certo, como o do Professor Maicon, vocês chegarão longe.
+    </p>
+    <p>
+        E para o Professor Maicon, minha eterna gratidão por ser uma fonte constante de motivação e sabedoria. 
+        Continue sendo essa inspiração para todos!
+    </p>
+</section>

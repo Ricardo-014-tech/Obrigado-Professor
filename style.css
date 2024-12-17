@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #f0f0f0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background: #4a90e2;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f9d342;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#inicio {
+    background: #1e1e2f;
+}
+
+.typing-effect {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(20) forwards, blink 0.6s infinite;
+}
+
+@keyframes typing {
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #f9d342;
+}
+
+input {
+    padding: 8px;
+    border: 2px solid #4a90e2;
+    border-radius: 5px;
+}
+/* Estilização adicional */
+#motivacao, #contador {
+    background-color: #1e1e2f;
+    color: #f0f0f0;
+    margin-top: 20px;
+    border-top: 2px solid #4a90e2;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#motivation-output, #click-count {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #f9d342;
+}
+#quiz {
+    background-color: #2b2b3d;
+    color: #f0f0f0;
+    padding: 20px;
+    border-top: 2px solid #4a90e2;
+}
+
+.question {
+    margin: 20px 0;
+}
+
+button {
+    margin-top: 10px;
+}
+#agradecimento {
+    background-color: #1e2a38;
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #f9d342;
+}
+
+#joke-output {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #f9d342;
+}
